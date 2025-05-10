@@ -16,6 +16,20 @@
 		00CD4F252DCF529100F7A801 /* LankaBusRideSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD4F242DCF529100F7A801 /* LankaBusRideSwiftUITests.swift */; };
 		00CD4F2F2DCF529200F7A801 /* LankaBusRideSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD4F2E2DCF529200F7A801 /* LankaBusRideSwiftUIUITests.swift */; };
 		00CD4F312DCF529200F7A801 /* LankaBusRideSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD4F302DCF529200F7A801 /* LankaBusRideSwiftUIUITestsLaunchTests.swift */; };
+		00CD4F412DCF541D00F7A801 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD4F402DCF541D00F7A801 /* APIManager.swift */; };
+		00CD4F432DCF543400F7A801 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD4F422DCF543400F7A801 /* EndPoints.swift */; };
+		00CD4F452DCF544500F7A801 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD4F442DCF544500F7A801 /* NetworkError.swift */; };
+		00CD4F472DCF54BA00F7A801 /* BusRouteDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD4F462DCF54BA00F7A801 /* BusRouteDTO.swift */; };
+		00CD4F492DCF54E800F7A801 /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD4F482DCF54E800F7A801 /* UserDTO.swift */; };
+		00CD4F4F2DCF554B00F7A801 /* BusRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD4F4E2DCF554B00F7A801 /* BusRoute.swift */; };
+		00CD4F512DCF556900F7A801 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD4F502DCF556900F7A801 /* User.swift */; };
+		00CD4F532DCF55C200F7A801 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD4F522DCF55C200F7A801 /* UserRepository.swift */; };
+		00CD4F552DCF55E900F7A801 /* UserRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD4F542DCF55E900F7A801 /* UserRepositoryProtocol.swift */; };
+		00CD4F572DCF560800F7A801 /* BusRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD4F562DCF560800F7A801 /* BusRepositoryProtocol.swift */; };
+		00CD4F592DCF562500F7A801 /* BusRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD4F582DCF562500F7A801 /* BusRepository.swift */; };
+		00CD4F5B2DCF565100F7A801 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD4F5A2DCF565100F7A801 /* HomeViewModel.swift */; };
+		00CD4F5D2DCF567F00F7A801 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD4F5C2DCF567F00F7A801 /* HomeView.swift */; };
+		00CD4F612DCF573B00F7A801 /* NetworkError+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD4F602DCF573B00F7A801 /* NetworkError+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +62,20 @@
 		00CD4F2A2DCF529100F7A801 /* LankaBusRideSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LankaBusRideSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00CD4F2E2DCF529200F7A801 /* LankaBusRideSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LankaBusRideSwiftUIUITests.swift; sourceTree = "<group>"; };
 		00CD4F302DCF529200F7A801 /* LankaBusRideSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LankaBusRideSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		00CD4F402DCF541D00F7A801 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		00CD4F422DCF543400F7A801 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		00CD4F442DCF544500F7A801 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		00CD4F462DCF54BA00F7A801 /* BusRouteDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusRouteDTO.swift; sourceTree = "<group>"; };
+		00CD4F482DCF54E800F7A801 /* UserDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDTO.swift; sourceTree = "<group>"; };
+		00CD4F4E2DCF554B00F7A801 /* BusRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusRoute.swift; sourceTree = "<group>"; };
+		00CD4F502DCF556900F7A801 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		00CD4F522DCF55C200F7A801 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		00CD4F542DCF55E900F7A801 /* UserRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryProtocol.swift; sourceTree = "<group>"; };
+		00CD4F562DCF560800F7A801 /* BusRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusRepositoryProtocol.swift; sourceTree = "<group>"; };
+		00CD4F582DCF562500F7A801 /* BusRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusRepository.swift; sourceTree = "<group>"; };
+		00CD4F5A2DCF565100F7A801 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		00CD4F5C2DCF567F00F7A801 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		00CD4F602DCF573B00F7A801 /* NetworkError+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkError+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +126,9 @@
 		00CD4F0D2DCF528F00F7A801 /* LankaBusRideSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				00CD4F5E2DCF571D00F7A801 /* Utilities */,
+				00CD4F4A2DCF551A00F7A801 /* Home */,
+				00CD4F3D2DCF53E700F7A801 /* Network */,
 				00CD4F0E2DCF528F00F7A801 /* LankaBusRideSwiftUIApp.swift */,
 				00CD4F102DCF528F00F7A801 /* ContentView.swift */,
 				00CD4F122DCF529100F7A801 /* Assets.xcassets */,
@@ -131,6 +162,89 @@
 				00CD4F302DCF529200F7A801 /* LankaBusRideSwiftUIUITestsLaunchTests.swift */,
 			);
 			path = LankaBusRideSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		00CD4F3D2DCF53E700F7A801 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				00CD4F3F2DCF540100F7A801 /* Repository */,
+				00CD4F3E2DCF53F700F7A801 /* Models */,
+				00CD4F402DCF541D00F7A801 /* APIManager.swift */,
+				00CD4F422DCF543400F7A801 /* EndPoints.swift */,
+				00CD4F442DCF544500F7A801 /* NetworkError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		00CD4F3E2DCF53F700F7A801 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				00CD4F462DCF54BA00F7A801 /* BusRouteDTO.swift */,
+				00CD4F482DCF54E800F7A801 /* UserDTO.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		00CD4F3F2DCF540100F7A801 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				00CD4F522DCF55C200F7A801 /* UserRepository.swift */,
+				00CD4F542DCF55E900F7A801 /* UserRepositoryProtocol.swift */,
+				00CD4F562DCF560800F7A801 /* BusRepositoryProtocol.swift */,
+				00CD4F582DCF562500F7A801 /* BusRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		00CD4F4A2DCF551A00F7A801 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				00CD4F4D2DCF553A00F7A801 /* Model */,
+				00CD4F4C2DCF553000F7A801 /* ViewModel */,
+				00CD4F4B2DCF552700F7A801 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		00CD4F4B2DCF552700F7A801 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				00CD4F5C2DCF567F00F7A801 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		00CD4F4C2DCF553000F7A801 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				00CD4F5A2DCF565100F7A801 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		00CD4F4D2DCF553A00F7A801 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00CD4F4E2DCF554B00F7A801 /* BusRoute.swift */,
+				00CD4F502DCF556900F7A801 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00CD4F5E2DCF571D00F7A801 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				00CD4F5F2DCF572700F7A801 /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		00CD4F5F2DCF572700F7A801 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				00CD4F602DCF573B00F7A801 /* NetworkError+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,9 +378,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				00CD4F1B2DCF529100F7A801 /* LankaBusRideSwiftUI.xcdatamodeld in Sources */,
+				00CD4F452DCF544500F7A801 /* NetworkError.swift in Sources */,
+				00CD4F592DCF562500F7A801 /* BusRepository.swift in Sources */,
+				00CD4F5B2DCF565100F7A801 /* HomeViewModel.swift in Sources */,
+				00CD4F532DCF55C200F7A801 /* UserRepository.swift in Sources */,
+				00CD4F5D2DCF567F00F7A801 /* HomeView.swift in Sources */,
+				00CD4F4F2DCF554B00F7A801 /* BusRoute.swift in Sources */,
 				00CD4F182DCF529100F7A801 /* Persistence.swift in Sources */,
+				00CD4F412DCF541D00F7A801 /* APIManager.swift in Sources */,
+				00CD4F472DCF54BA00F7A801 /* BusRouteDTO.swift in Sources */,
 				00CD4F112DCF528F00F7A801 /* ContentView.swift in Sources */,
+				00CD4F572DCF560800F7A801 /* BusRepositoryProtocol.swift in Sources */,
+				00CD4F492DCF54E800F7A801 /* UserDTO.swift in Sources */,
+				00CD4F432DCF543400F7A801 /* EndPoints.swift in Sources */,
 				00CD4F0F2DCF528F00F7A801 /* LankaBusRideSwiftUIApp.swift in Sources */,
+				00CD4F612DCF573B00F7A801 /* NetworkError+Extensions.swift in Sources */,
+				00CD4F552DCF55E900F7A801 /* UserRepositoryProtocol.swift in Sources */,
+				00CD4F512DCF556900F7A801 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
