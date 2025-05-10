@@ -9,22 +9,17 @@ import Foundation
 
 struct BusRouteDTO: Decodable {
     let id: Int
-    let title: String
+    let company: String
     let source: String
     let destination: String
-    let departureTime: String
-    let arrivalTime: String
-    let stops: [String]
+    let departure: String
+    let arrival: String
 
     func toDomain() -> BusRoute {
         return BusRoute(
             id: id,
-            title: title,
-            source: source,
-            destination: destination,
-            departureTime: departureTime,
-            arrivalTime: arrivalTime,
-            stops: stops
+            title: "\(company) | \(source) → \(destination)",
+            timeRange: "\(departure) - \(arrival)"
         )
     }
 }
