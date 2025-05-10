@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00CD4F0F2DCF528F00F7A801 /* LankaBusRideSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD4F0E2DCF528F00F7A801 /* LankaBusRideSwiftUIApp.swift */; };
+		00CD4F112DCF528F00F7A801 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD4F102DCF528F00F7A801 /* ContentView.swift */; };
+		00CD4F132DCF529100F7A801 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00CD4F122DCF529100F7A801 /* Assets.xcassets */; };
+		00CD4F162DCF529100F7A801 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00CD4F152DCF529100F7A801 /* Preview Assets.xcassets */; };
+		00CD4F182DCF529100F7A801 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD4F172DCF529100F7A801 /* Persistence.swift */; };
+		00CD4F1B2DCF529100F7A801 /* LankaBusRideSwiftUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00CD4F192DCF529100F7A801 /* LankaBusRideSwiftUI.xcdatamodeld */; };
+		00CD4F252DCF529100F7A801 /* LankaBusRideSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD4F242DCF529100F7A801 /* LankaBusRideSwiftUITests.swift */; };
+		00CD4F2F2DCF529200F7A801 /* LankaBusRideSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD4F2E2DCF529200F7A801 /* LankaBusRideSwiftUIUITests.swift */; };
+		00CD4F312DCF529200F7A801 /* LankaBusRideSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD4F302DCF529200F7A801 /* LankaBusRideSwiftUIUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00CD4F212DCF529100F7A801 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00CD4F032DCF528F00F7A801 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00CD4F0A2DCF528F00F7A801;
+			remoteInfo = LankaBusRideSwiftUI;
+		};
+		00CD4F2B2DCF529100F7A801 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00CD4F032DCF528F00F7A801 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00CD4F0A2DCF528F00F7A801;
+			remoteInfo = LankaBusRideSwiftUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00CD4F0B2DCF528F00F7A801 /* LankaBusRideSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LankaBusRideSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00CD4F0E2DCF528F00F7A801 /* LankaBusRideSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LankaBusRideSwiftUIApp.swift; sourceTree = "<group>"; };
+		00CD4F102DCF528F00F7A801 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		00CD4F122DCF529100F7A801 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00CD4F152DCF529100F7A801 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		00CD4F172DCF529100F7A801 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		00CD4F1A2DCF529100F7A801 /* LankaBusRideSwiftUI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LankaBusRideSwiftUI.xcdatamodel; sourceTree = "<group>"; };
+		00CD4F202DCF529100F7A801 /* LankaBusRideSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LankaBusRideSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00CD4F242DCF529100F7A801 /* LankaBusRideSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LankaBusRideSwiftUITests.swift; sourceTree = "<group>"; };
+		00CD4F2A2DCF529100F7A801 /* LankaBusRideSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LankaBusRideSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00CD4F2E2DCF529200F7A801 /* LankaBusRideSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LankaBusRideSwiftUIUITests.swift; sourceTree = "<group>"; };
+		00CD4F302DCF529200F7A801 /* LankaBusRideSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LankaBusRideSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00CD4F082DCF528F00F7A801 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00CD4F1D2DCF529100F7A801 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00CD4F272DCF529100F7A801 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00CD4F022DCF528F00F7A801 = {
+			isa = PBXGroup;
+			children = (
+				00CD4F0D2DCF528F00F7A801 /* LankaBusRideSwiftUI */,
+				00CD4F232DCF529100F7A801 /* LankaBusRideSwiftUITests */,
+				00CD4F2D2DCF529100F7A801 /* LankaBusRideSwiftUIUITests */,
+				00CD4F0C2DCF528F00F7A801 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		00CD4F0C2DCF528F00F7A801 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00CD4F0B2DCF528F00F7A801 /* LankaBusRideSwiftUI.app */,
+				00CD4F202DCF529100F7A801 /* LankaBusRideSwiftUITests.xctest */,
+				00CD4F2A2DCF529100F7A801 /* LankaBusRideSwiftUIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00CD4F0D2DCF528F00F7A801 /* LankaBusRideSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				00CD4F0E2DCF528F00F7A801 /* LankaBusRideSwiftUIApp.swift */,
+				00CD4F102DCF528F00F7A801 /* ContentView.swift */,
+				00CD4F122DCF529100F7A801 /* Assets.xcassets */,
+				00CD4F172DCF529100F7A801 /* Persistence.swift */,
+				00CD4F192DCF529100F7A801 /* LankaBusRideSwiftUI.xcdatamodeld */,
+				00CD4F142DCF529100F7A801 /* Preview Content */,
+			);
+			path = LankaBusRideSwiftUI;
+			sourceTree = "<group>";
+		};
+		00CD4F142DCF529100F7A801 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				00CD4F152DCF529100F7A801 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		00CD4F232DCF529100F7A801 /* LankaBusRideSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				00CD4F242DCF529100F7A801 /* LankaBusRideSwiftUITests.swift */,
+			);
+			path = LankaBusRideSwiftUITests;
+			sourceTree = "<group>";
+		};
+		00CD4F2D2DCF529100F7A801 /* LankaBusRideSwiftUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				00CD4F2E2DCF529200F7A801 /* LankaBusRideSwiftUIUITests.swift */,
+				00CD4F302DCF529200F7A801 /* LankaBusRideSwiftUIUITestsLaunchTests.swift */,
+			);
+			path = LankaBusRideSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00CD4F0A2DCF528F00F7A801 /* LankaBusRideSwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00CD4F342DCF529200F7A801 /* Build configuration list for PBXNativeTarget "LankaBusRideSwiftUI" */;
+			buildPhases = (
+				00CD4F072DCF528F00F7A801 /* Sources */,
+				00CD4F082DCF528F00F7A801 /* Frameworks */,
+				00CD4F092DCF528F00F7A801 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LankaBusRideSwiftUI;
+			productName = LankaBusRideSwiftUI;
+			productReference = 00CD4F0B2DCF528F00F7A801 /* LankaBusRideSwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		00CD4F1F2DCF529100F7A801 /* LankaBusRideSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00CD4F372DCF529200F7A801 /* Build configuration list for PBXNativeTarget "LankaBusRideSwiftUITests" */;
+			buildPhases = (
+				00CD4F1C2DCF529100F7A801 /* Sources */,
+				00CD4F1D2DCF529100F7A801 /* Frameworks */,
+				00CD4F1E2DCF529100F7A801 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00CD4F222DCF529100F7A801 /* PBXTargetDependency */,
+			);
+			name = LankaBusRideSwiftUITests;
+			productName = LankaBusRideSwiftUITests;
+			productReference = 00CD4F202DCF529100F7A801 /* LankaBusRideSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		00CD4F292DCF529100F7A801 /* LankaBusRideSwiftUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00CD4F3A2DCF529200F7A801 /* Build configuration list for PBXNativeTarget "LankaBusRideSwiftUIUITests" */;
+			buildPhases = (
+				00CD4F262DCF529100F7A801 /* Sources */,
+				00CD4F272DCF529100F7A801 /* Frameworks */,
+				00CD4F282DCF529100F7A801 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00CD4F2C2DCF529100F7A801 /* PBXTargetDependency */,
+			);
+			name = LankaBusRideSwiftUIUITests;
+			productName = LankaBusRideSwiftUIUITests;
+			productReference = 00CD4F2A2DCF529100F7A801 /* LankaBusRideSwiftUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00CD4F032DCF528F00F7A801 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					00CD4F0A2DCF528F00F7A801 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					00CD4F1F2DCF529100F7A801 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 00CD4F0A2DCF528F00F7A801;
+					};
+					00CD4F292DCF529100F7A801 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 00CD4F0A2DCF528F00F7A801;
+					};
+				};
+			};
+			buildConfigurationList = 00CD4F062DCF528F00F7A801 /* Build configuration list for PBXProject "LankaBusRideSwiftUI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00CD4F022DCF528F00F7A801;
+			productRefGroup = 00CD4F0C2DCF528F00F7A801 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00CD4F0A2DCF528F00F7A801 /* LankaBusRideSwiftUI */,
+				00CD4F1F2DCF529100F7A801 /* LankaBusRideSwiftUITests */,
+				00CD4F292DCF529100F7A801 /* LankaBusRideSwiftUIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00CD4F092DCF528F00F7A801 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00CD4F162DCF529100F7A801 /* Preview Assets.xcassets in Resources */,
+				00CD4F132DCF529100F7A801 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00CD4F1E2DCF529100F7A801 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00CD4F282DCF529100F7A801 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00CD4F072DCF528F00F7A801 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00CD4F1B2DCF529100F7A801 /* LankaBusRideSwiftUI.xcdatamodeld in Sources */,
+				00CD4F182DCF529100F7A801 /* Persistence.swift in Sources */,
+				00CD4F112DCF528F00F7A801 /* ContentView.swift in Sources */,
+				00CD4F0F2DCF528F00F7A801 /* LankaBusRideSwiftUIApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00CD4F1C2DCF529100F7A801 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00CD4F252DCF529100F7A801 /* LankaBusRideSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00CD4F262DCF529100F7A801 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00CD4F2F2DCF529200F7A801 /* LankaBusRideSwiftUIUITests.swift in Sources */,
+				00CD4F312DCF529200F7A801 /* LankaBusRideSwiftUIUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00CD4F222DCF529100F7A801 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00CD4F0A2DCF528F00F7A801 /* LankaBusRideSwiftUI */;
+			targetProxy = 00CD4F212DCF529100F7A801 /* PBXContainerItemProxy */;
+		};
+		00CD4F2C2DCF529100F7A801 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00CD4F0A2DCF528F00F7A801 /* LankaBusRideSwiftUI */;
+			targetProxy = 00CD4F2B2DCF529100F7A801 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00CD4F322DCF529200F7A801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		00CD4F332DCF529200F7A801 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00CD4F352DCF529200F7A801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LankaBusRideSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = P38T7ZMMB6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rancreation.LankaBusRideSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00CD4F362DCF529200F7A801 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LankaBusRideSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = P38T7ZMMB6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rancreation.LankaBusRideSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		00CD4F382DCF529200F7A801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P38T7ZMMB6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rancreation.LankaBusRideSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LankaBusRideSwiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LankaBusRideSwiftUI";
+			};
+			name = Debug;
+		};
+		00CD4F392DCF529200F7A801 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P38T7ZMMB6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rancreation.LankaBusRideSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LankaBusRideSwiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LankaBusRideSwiftUI";
+			};
+			name = Release;
+		};
+		00CD4F3B2DCF529200F7A801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P38T7ZMMB6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rancreation.LankaBusRideSwiftUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LankaBusRideSwiftUI;
+			};
+			name = Debug;
+		};
+		00CD4F3C2DCF529200F7A801 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P38T7ZMMB6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rancreation.LankaBusRideSwiftUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LankaBusRideSwiftUI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00CD4F062DCF528F00F7A801 /* Build configuration list for PBXProject "LankaBusRideSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00CD4F322DCF529200F7A801 /* Debug */,
+				00CD4F332DCF529200F7A801 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00CD4F342DCF529200F7A801 /* Build configuration list for PBXNativeTarget "LankaBusRideSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00CD4F352DCF529200F7A801 /* Debug */,
+				00CD4F362DCF529200F7A801 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00CD4F372DCF529200F7A801 /* Build configuration list for PBXNativeTarget "LankaBusRideSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00CD4F382DCF529200F7A801 /* Debug */,
+				00CD4F392DCF529200F7A801 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00CD4F3A2DCF529200F7A801 /* Build configuration list for PBXNativeTarget "LankaBusRideSwiftUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00CD4F3B2DCF529200F7A801 /* Debug */,
+				00CD4F3C2DCF529200F7A801 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		00CD4F192DCF529100F7A801 /* LankaBusRideSwiftUI.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				00CD4F1A2DCF529100F7A801 /* LankaBusRideSwiftUI.xcdatamodel */,
+			);
+			currentVersion = 00CD4F1A2DCF529100F7A801 /* LankaBusRideSwiftUI.xcdatamodel */;
+			path = LankaBusRideSwiftUI.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 00CD4F032DCF528F00F7A801 /* Project object */;
+}
