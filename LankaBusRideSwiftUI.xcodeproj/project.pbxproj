@@ -11,6 +11,7 @@
 		006070702DD18C3B009AB627 /* MockUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0060706F2DD18C3B009AB627 /* MockUserRepository.swift */; };
 		006070722DD18CE4009AB627 /* MockBusRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006070712DD18CE4009AB627 /* MockBusRepository.swift */; };
 		006070742DD18DB3009AB627 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006070732DD18DB3009AB627 /* HomeViewModelTests.swift */; };
+		0060707E2DD19942009AB627 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0060707D2DD19942009AB627 /* MainTabView.swift */; };
 		00CD4F0F2DCF528F00F7A801 /* LankaBusRideSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD4F0E2DCF528F00F7A801 /* LankaBusRideSwiftUIApp.swift */; };
 		00CD4F112DCF528F00F7A801 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD4F102DCF528F00F7A801 /* ContentView.swift */; };
 		00CD4F132DCF529100F7A801 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00CD4F122DCF529100F7A801 /* Assets.xcassets */; };
@@ -58,6 +59,7 @@
 		0060706F2DD18C3B009AB627 /* MockUserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserRepository.swift; sourceTree = "<group>"; };
 		006070712DD18CE4009AB627 /* MockBusRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBusRepository.swift; sourceTree = "<group>"; };
 		006070732DD18DB3009AB627 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		0060707D2DD19942009AB627 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		00CD4F0B2DCF528F00F7A801 /* LankaBusRideSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LankaBusRideSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00CD4F0E2DCF528F00F7A801 /* LankaBusRideSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LankaBusRideSwiftUIApp.swift; sourceTree = "<group>"; };
 		00CD4F102DCF528F00F7A801 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -128,6 +130,14 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
+		0060707C2DD198F9009AB627 /* BottomTab */ = {
+			isa = PBXGroup;
+			children = (
+				0060707D2DD19942009AB627 /* MainTabView.swift */,
+			);
+			path = BottomTab;
+			sourceTree = "<group>";
+		};
 		00CD4F022DCF528F00F7A801 = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +163,7 @@
 			children = (
 				00CD4F5E2DCF571D00F7A801 /* Utilities */,
 				00CD4F4A2DCF551A00F7A801 /* Home */,
+				0060707C2DD198F9009AB627 /* BottomTab */,
 				00CD4F3D2DCF53E700F7A801 /* Network */,
 				00CD4F0E2DCF528F00F7A801 /* LankaBusRideSwiftUIApp.swift */,
 				00CD4F102DCF528F00F7A801 /* ContentView.swift */,
@@ -424,6 +435,7 @@
 				00CD4F552DCF55E900F7A801 /* UserRepositoryProtocol.swift in Sources */,
 				0060706D2DD17EC9009AB627 /* AvailableBusRow.swift in Sources */,
 				00CD4F512DCF556900F7A801 /* User.swift in Sources */,
+				0060707E2DD19942009AB627 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
