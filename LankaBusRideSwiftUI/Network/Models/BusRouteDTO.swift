@@ -14,12 +14,19 @@ struct BusRouteDTO: Decodable {
     let destination: String
     let departure: String
     let arrival: String
+    let routeNumber: String
+    let duration: String
 
     func toDomain() -> BusRoute {
         return BusRoute(
             id: id,
-            title: "\(company) | \(source) → \(destination)",
-            timeRange: "\(departure) - \(arrival)"
+            companyName: company,
+            source: source,
+            destination: destination,
+            departure: departure,
+            arrival: arrival,
+            routeNumber: routeNumber,
+            duration: duration
         )
     }
 }
