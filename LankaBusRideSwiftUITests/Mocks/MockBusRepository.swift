@@ -11,7 +11,7 @@ import Foundation
 final class MockBusRepository: BusRepositoryProtocol {
     var mockRoutes: [BusRoute] = []
 
-    func fetchRoutes(completion: @escaping (Result<[BusRoute], Error>) -> Void) {
-        completion(.success(mockRoutes))
+    func fetchRoutes(completion: @escaping (Bool, [BusRoute]?, NetworkError?) -> Void) {
+        completion(true, mockRoutes, nil)
     }
 }

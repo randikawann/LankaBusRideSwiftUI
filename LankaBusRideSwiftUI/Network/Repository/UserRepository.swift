@@ -10,13 +10,13 @@ import Foundation
 final class UserRepository: UserRepositoryProtocol {
     private let apiManager = APIManager.shared
 
-    func fetchUser(completion: @escaping (Result<User, Error>) -> Void) {
-        apiManager.request(endpoint: .getUserDetails) { (result: Result<UserDTO, Error>) in
-            switch result {
-            case .success(let dto):
-                completion(.success(dto.toDomain()))
-            case .failure(let error):
-                completion(.failure(error))
+    func fetchUser(completion: @escaping (Bool, User?, NetworkError?) -> Void) {
+        apiManager.request(endpoint: .getUserDetails) { (isSuccess: Bool, dto: UserDTO?, error: NetworkError?) in
+            if isSuccess, let dto = dto {
+                let user = dto.toDomain()
+                completion(true, user, nil)
+            } else {
+                completion(false, nil, error)
             }
         }
     }
