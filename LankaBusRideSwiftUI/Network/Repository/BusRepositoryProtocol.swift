@@ -8,5 +8,5 @@
 import Foundation
 
 protocol BusRepositoryProtocol {
-    func fetchRoutes(completion: @escaping (Result<[BusRoute], Error>) -> Void)
+    func fetchRoutes(completion: @escaping (Bool, [BusRoute]?, NetworkError?) -> Void)
 }

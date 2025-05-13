@@ -23,18 +23,22 @@ final class HomeViewModel: ObservableObject {
     }
 
     func loadData() {
-        userRepository.fetchUser { [weak self] result in
+        userRepository.fetchUser { [weak self] isSuccess, user, error in
             DispatchQueue.main.async {
-                if case .success(let user) = result {
+                if isSuccess, let user = user {
                     self?.user = user
+                } else {
+                    print("Failed to fetch user:", error)
                 }
             }
         }
-
-        busRepository.fetchRoutes { [weak self] result in
+        
+        busRepository.fetchRoutes { [weak self] isSuccess, routes, error in
             DispatchQueue.main.async {
-                if case .success(let routes) = result {
+                if isSuccess, let routes = routes {
                     self?.routes = routes
+                } else {
+                    print("Failed to fetch routes:", error)
                 }
             }
         }

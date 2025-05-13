@@ -8,5 +8,5 @@
 import Foundation
 
 protocol UserRepositoryProtocol {
-    func fetchUser(completion: @escaping (Result<User, Error>) -> Void)
+    func fetchUser(completion: @escaping (Bool, User?, NetworkError?) -> Void)
 }
