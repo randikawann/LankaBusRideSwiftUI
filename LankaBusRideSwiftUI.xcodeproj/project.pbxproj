@@ -12,6 +12,12 @@
 		006070722DD18CE4009AB627 /* MockBusRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006070712DD18CE4009AB627 /* MockBusRepository.swift */; };
 		006070742DD18DB3009AB627 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006070732DD18DB3009AB627 /* HomeViewModelTests.swift */; };
 		0060707E2DD19942009AB627 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0060707D2DD19942009AB627 /* MainTabView.swift */; };
+		009787822DD4ECA2004DC847 /* RouteInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009787812DD4ECA2004DC847 /* RouteInfoCell.swift */; };
+		009787842DD4ECD6004DC847 /* AvailableBusRouteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009787832DD4ECD6004DC847 /* AvailableBusRouteCell.swift */; };
+		00B704472DD41502001769EE /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B704462DD41502001769EE /* SearchViewModel.swift */; };
+		00B7044A2DD41563001769EE /* RouteInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B704492DD41563001769EE /* RouteInfo.swift */; };
+		00B7044C2DD417CA001769EE /* BusRoute+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B7044B2DD417CA001769EE /* BusRoute+Extensions.swift */; };
+		00BDD7672DD3901C00623847 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BDD7662DD3901C00623847 /* SearchView.swift */; };
 		00CD4F0F2DCF528F00F7A801 /* LankaBusRideSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD4F0E2DCF528F00F7A801 /* LankaBusRideSwiftUIApp.swift */; };
 		00CD4F112DCF528F00F7A801 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD4F102DCF528F00F7A801 /* ContentView.swift */; };
 		00CD4F132DCF529100F7A801 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00CD4F122DCF529100F7A801 /* Assets.xcassets */; };
@@ -60,6 +66,12 @@
 		006070712DD18CE4009AB627 /* MockBusRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBusRepository.swift; sourceTree = "<group>"; };
 		006070732DD18DB3009AB627 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		0060707D2DD19942009AB627 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		009787812DD4ECA2004DC847 /* RouteInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteInfoCell.swift; sourceTree = "<group>"; };
+		009787832DD4ECD6004DC847 /* AvailableBusRouteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableBusRouteCell.swift; sourceTree = "<group>"; };
+		00B704462DD41502001769EE /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		00B704492DD41563001769EE /* RouteInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteInfo.swift; sourceTree = "<group>"; };
+		00B7044B2DD417CA001769EE /* BusRoute+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BusRoute+Extensions.swift"; sourceTree = "<group>"; };
+		00BDD7662DD3901C00623847 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		00CD4F0B2DCF528F00F7A801 /* LankaBusRideSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LankaBusRideSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00CD4F0E2DCF528F00F7A801 /* LankaBusRideSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LankaBusRideSwiftUIApp.swift; sourceTree = "<group>"; };
 		00CD4F102DCF528F00F7A801 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -138,6 +150,50 @@
 			path = BottomTab;
 			sourceTree = "<group>";
 		};
+		00B704452DD414EF001769EE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				00B704462DD41502001769EE /* SearchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		00B704482DD41553001769EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00B704492DD41563001769EE /* RouteInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00BDD7622DD38FC400623847 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				00B704482DD41553001769EE /* Model */,
+				00B704452DD414EF001769EE /* ViewModel */,
+				00BDD7632DD38FD500623847 /* Views */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		00BDD7632DD38FD500623847 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				00BDD7682DD3909100623847 /* CustomViews */,
+				00BDD7662DD3901C00623847 /* SearchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		00BDD7682DD3909100623847 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				009787812DD4ECA2004DC847 /* RouteInfoCell.swift */,
+				009787832DD4ECD6004DC847 /* AvailableBusRouteCell.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		00CD4F022DCF528F00F7A801 = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +217,7 @@
 		00CD4F0D2DCF528F00F7A801 /* LankaBusRideSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				00BDD7622DD38FC400623847 /* Search */,
 				00CD4F5E2DCF571D00F7A801 /* Utilities */,
 				00CD4F4A2DCF551A00F7A801 /* Home */,
 				0060707C2DD198F9009AB627 /* BottomTab */,
@@ -282,6 +339,7 @@
 			isa = PBXGroup;
 			children = (
 				00CD4F602DCF573B00F7A801 /* NetworkError+Extensions.swift */,
+				00B7044B2DD417CA001769EE /* BusRoute+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -420,21 +478,27 @@
 				00CD4F452DCF544500F7A801 /* NetworkError.swift in Sources */,
 				00CD4F592DCF562500F7A801 /* BusRepository.swift in Sources */,
 				00CD4F5B2DCF565100F7A801 /* HomeViewModel.swift in Sources */,
+				00B7044C2DD417CA001769EE /* BusRoute+Extensions.swift in Sources */,
 				00CD4F532DCF55C200F7A801 /* UserRepository.swift in Sources */,
 				00CD4F5D2DCF567F00F7A801 /* HomeView.swift in Sources */,
 				00CD4F4F2DCF554B00F7A801 /* BusRoute.swift in Sources */,
 				00CD4F182DCF529100F7A801 /* Persistence.swift in Sources */,
 				00CD4F412DCF541D00F7A801 /* APIManager.swift in Sources */,
 				00CD4F472DCF54BA00F7A801 /* BusRouteDTO.swift in Sources */,
+				00BDD7672DD3901C00623847 /* SearchView.swift in Sources */,
 				00CD4F112DCF528F00F7A801 /* ContentView.swift in Sources */,
+				009787822DD4ECA2004DC847 /* RouteInfoCell.swift in Sources */,
 				00CD4F572DCF560800F7A801 /* BusRepositoryProtocol.swift in Sources */,
+				00B7044A2DD41563001769EE /* RouteInfo.swift in Sources */,
 				00CD4F492DCF54E800F7A801 /* UserDTO.swift in Sources */,
+				00B704472DD41502001769EE /* SearchViewModel.swift in Sources */,
 				00CD4F432DCF543400F7A801 /* EndPoints.swift in Sources */,
 				00CD4F0F2DCF528F00F7A801 /* LankaBusRideSwiftUIApp.swift in Sources */,
 				00CD4F612DCF573B00F7A801 /* NetworkError+Extensions.swift in Sources */,
 				00CD4F552DCF55E900F7A801 /* UserRepositoryProtocol.swift in Sources */,
 				0060706D2DD17EC9009AB627 /* AvailableBusRow.swift in Sources */,
 				00CD4F512DCF556900F7A801 /* User.swift in Sources */,
+				009787842DD4ECD6004DC847 /* AvailableBusRouteCell.swift in Sources */,
 				0060707E2DD19942009AB627 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
