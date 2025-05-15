@@ -64,7 +64,9 @@ struct HomeView: View {
                 ScrollView {
                     VStack(spacing: 12) {
                         ForEach(viewModel.routes) { bus in
-                            AvailableBusRow(bus: bus)
+                            NavigationLink(destination: DetailView(busID: bus.id)) {
+                                AvailableBusRow(bus: bus)
+                            }
                         }
                     }
                     .padding()

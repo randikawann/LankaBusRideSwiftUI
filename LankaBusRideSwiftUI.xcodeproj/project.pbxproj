@@ -13,6 +13,10 @@
 		006070742DD18DB3009AB627 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006070732DD18DB3009AB627 /* HomeViewModelTests.swift */; };
 		0060707E2DD19942009AB627 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0060707D2DD19942009AB627 /* MainTabView.swift */; };
 		0085BFCB2DD5AC43005EEF5D /* SearchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0085BFCA2DD5AC43005EEF5D /* SearchViewModelTests.swift */; };
+		0085BFCE2DD5B7D8005EEF5D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0085BFCD2DD5B7D8005EEF5D /* DetailView.swift */; };
+		0085BFD22DD5B844005EEF5D /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0085BFD12DD5B844005EEF5D /* DetailViewModel.swift */; };
+		0085BFD52DD5B9D3005EEF5D /* BusDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0085BFD42DD5B9D3005EEF5D /* BusDetail.swift */; };
+		0085BFD92DD5BAD3005EEF5D /* InfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0085BFD82DD5BAD3005EEF5D /* InfoRow.swift */; };
 		009787822DD4ECA2004DC847 /* RouteInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009787812DD4ECA2004DC847 /* RouteInfoCell.swift */; };
 		00B704472DD41502001769EE /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B704462DD41502001769EE /* SearchViewModel.swift */; };
 		00B7044A2DD41563001769EE /* RouteInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B704492DD41563001769EE /* RouteInfo.swift */; };
@@ -67,6 +71,10 @@
 		006070732DD18DB3009AB627 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		0060707D2DD19942009AB627 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		0085BFCA2DD5AC43005EEF5D /* SearchViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModelTests.swift; sourceTree = "<group>"; };
+		0085BFCD2DD5B7D8005EEF5D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		0085BFD12DD5B844005EEF5D /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		0085BFD42DD5B9D3005EEF5D /* BusDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusDetail.swift; sourceTree = "<group>"; };
+		0085BFD82DD5BAD3005EEF5D /* InfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRow.swift; sourceTree = "<group>"; };
 		009787812DD4ECA2004DC847 /* RouteInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteInfoCell.swift; sourceTree = "<group>"; };
 		00B704462DD41502001769EE /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		00B704492DD41563001769EE /* RouteInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteInfo.swift; sourceTree = "<group>"; };
@@ -150,6 +158,49 @@
 			path = BottomTab;
 			sourceTree = "<group>";
 		};
+		0085BFCC2DD5B7C0005EEF5D /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				0085BFD32DD5B9BB005EEF5D /* Model */,
+				0085BFD02DD5B829005EEF5D /* ViewModel */,
+				0085BFCF2DD5B80D005EEF5D /* Views */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		0085BFCF2DD5B80D005EEF5D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0085BFD62DD5BAB9005EEF5D /* CustomViews */,
+				0085BFCD2DD5B7D8005EEF5D /* DetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0085BFD02DD5B829005EEF5D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0085BFD12DD5B844005EEF5D /* DetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0085BFD32DD5B9BB005EEF5D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0085BFD42DD5B9D3005EEF5D /* BusDetail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0085BFD62DD5BAB9005EEF5D /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				0085BFD82DD5BAD3005EEF5D /* InfoRow.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		00B704452DD414EF001769EE /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +267,7 @@
 		00CD4F0D2DCF528F00F7A801 /* LankaBusRideSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				0085BFCC2DD5B7C0005EEF5D /* Detail */,
 				00BDD7622DD38FC400623847 /* Search */,
 				00CD4F5E2DCF571D00F7A801 /* Utilities */,
 				00CD4F4A2DCF551A00F7A801 /* Home */,
@@ -478,12 +530,15 @@
 				00CD4F452DCF544500F7A801 /* NetworkError.swift in Sources */,
 				00CD4F592DCF562500F7A801 /* BusRepository.swift in Sources */,
 				00CD4F5B2DCF565100F7A801 /* HomeViewModel.swift in Sources */,
+				0085BFD22DD5B844005EEF5D /* DetailViewModel.swift in Sources */,
 				00B7044C2DD417CA001769EE /* BusRoute+Extensions.swift in Sources */,
 				00CD4F532DCF55C200F7A801 /* UserRepository.swift in Sources */,
 				00CD4F5D2DCF567F00F7A801 /* HomeView.swift in Sources */,
+				0085BFCE2DD5B7D8005EEF5D /* DetailView.swift in Sources */,
 				00CD4F4F2DCF554B00F7A801 /* BusRoute.swift in Sources */,
 				00CD4F182DCF529100F7A801 /* Persistence.swift in Sources */,
 				00CD4F412DCF541D00F7A801 /* APIManager.swift in Sources */,
+				0085BFD92DD5BAD3005EEF5D /* InfoRow.swift in Sources */,
 				00CD4F472DCF54BA00F7A801 /* BusRouteDTO.swift in Sources */,
 				00BDD7672DD3901C00623847 /* SearchView.swift in Sources */,
 				00CD4F112DCF528F00F7A801 /* ContentView.swift in Sources */,
@@ -491,6 +546,7 @@
 				00CD4F572DCF560800F7A801 /* BusRepositoryProtocol.swift in Sources */,
 				00B7044A2DD41563001769EE /* RouteInfo.swift in Sources */,
 				00CD4F492DCF54E800F7A801 /* UserDTO.swift in Sources */,
+				0085BFD52DD5B9D3005EEF5D /* BusDetail.swift in Sources */,
 				00B704472DD41502001769EE /* SearchViewModel.swift in Sources */,
 				00CD4F432DCF543400F7A801 /* EndPoints.swift in Sources */,
 				00CD4F0F2DCF528F00F7A801 /* LankaBusRideSwiftUIApp.swift in Sources */,
