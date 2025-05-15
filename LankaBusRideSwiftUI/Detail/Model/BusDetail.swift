@@ -1,14 +1,15 @@
 //
-//  BusRoute.swift
+//  BusDetail.swift
 //  LankaBusRideSwiftUI
 //
-//  Created by ranCreation on 2025-05-10.
+//  Created by ranCreation on 2025-05-15.
 //
 
 import Foundation
 
-struct BusRoute: Identifiable, Hashable {
+struct BusDetail {
     let id: Int
+    let title: String
     let companyName: String
     let source: String
     let destination: String
@@ -16,4 +17,7 @@ struct BusRoute: Identifiable, Hashable {
     let arrival: String
     let routeNumber: String
     let duration: String
+    let popularStops: [String]
+    let fare: Int
+    let busType: String
 }

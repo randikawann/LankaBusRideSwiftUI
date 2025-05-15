@@ -48,7 +48,8 @@ struct HomeView: View {
                         }
                             .padding()
                     )
-                    .padding(.horizontal)
+                    .padding(.all, 16)
+                    .shadow(color: .gray.opacity(0.4), radius: 6, x: 0, y: 4)
                 
                 HStack {
                     Text("Available Buses")
@@ -63,7 +64,9 @@ struct HomeView: View {
                 ScrollView {
                     VStack(spacing: 12) {
                         ForEach(viewModel.routes) { bus in
-                            AvailableBusRow(bus: bus)
+                            NavigationLink(destination: DetailView(busID: bus.id)) {
+                                AvailableBusRow(bus: bus)
+                            }
                         }
                     }
                     .padding()

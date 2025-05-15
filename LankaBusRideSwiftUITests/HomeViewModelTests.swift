@@ -10,6 +10,26 @@ import XCTest
 @testable import LankaBusRideSwiftUI
 
 final class HomeViewModelTests: XCTestCase {
+    
+    
+    var viewModel: HomeViewModel!
+    var mockBusRepository: MockBusRepository!
+    var mockUserRepository: MockUserRepository!
+    
+    override func setUp() {
+        super.setUp()
+        mockBusRepository = MockBusRepository()
+        mockUserRepository = MockUserRepository()
+        viewModel = HomeViewModel(userRepository: mockUserRepository, busRepository: mockBusRepository)
+    }
+    
+    override func tearDown() {
+        viewModel = nil
+        mockBusRepository = nil
+        mockUserRepository = nil
+        super.tearDown()
+    }
+    
 
     func test_loadData_setsUserAndRoutes() {
         // Arrange
@@ -17,13 +37,9 @@ final class HomeViewModelTests: XCTestCase {
         let expectedRoutes = [
             BusRoute(id: 1, companyName: "Mock Co", source: "A", destination: "B", departure: "6:00", arrival: "9:00", routeNumber: "MOCK1", duration: "3h")
         ]
-        let mockUserRepo = MockUserRepository()
-        mockUserRepo.mockUser = expectedUser
+        mockUserRepository.mockUser = expectedUser
 
-        let mockBusRepo = MockBusRepository()
-        mockBusRepo.mockRoutes = expectedRoutes
-
-        let viewModel = HomeViewModel(userRepository: mockUserRepo, busRepository: mockBusRepo)
+        mockBusRepository.fetchRoutesResult = (true, expectedRoutes, nil)
 
         let expectationUser = expectation(description: "User loaded")
         let expectationRoutes = expectation(description: "Routes loaded")
@@ -32,8 +48,8 @@ final class HomeViewModelTests: XCTestCase {
         viewModel.loadData()
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-            if viewModel.user != nil { expectationUser.fulfill() }
-            if !viewModel.routes.isEmpty { expectationRoutes.fulfill() }
+            if self.viewModel.user != nil { expectationUser.fulfill() }
+            if !self.viewModel.routes.isEmpty { expectationRoutes.fulfill() }
         }
 
         // Assert
