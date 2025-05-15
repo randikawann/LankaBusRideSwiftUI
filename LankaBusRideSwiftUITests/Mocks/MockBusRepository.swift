@@ -9,9 +9,13 @@ import Foundation
 @testable import LankaBusRideSwiftUI
 
 final class MockBusRepository: BusRepositoryProtocol {
-    var mockRoutes: [BusRoute] = []
-
+    var fetchRoutesResult: (Bool, [BusRoute]?, NetworkError?)?
+    
     func fetchRoutes(completion: @escaping (Bool, [BusRoute]?, NetworkError?) -> Void) {
-        completion(true, mockRoutes, nil)
+        if let result = fetchRoutesResult {
+            completion(result.0, result.1, result.2)
+        } else {
+            completion(false, nil, nil)
+        }
     }
 }
