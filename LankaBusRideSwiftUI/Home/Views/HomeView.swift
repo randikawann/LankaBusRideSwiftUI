@@ -48,7 +48,8 @@ struct HomeView: View {
                         }
                             .padding()
                     )
-                    .padding(.horizontal)
+                    .padding(.all, 16)
+                    .shadow(color: .gray.opacity(0.4), radius: 6, x: 0, y: 4)
                 
                 HStack {
                     Text("Available Buses")

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct BusRoute: Identifiable {
+struct BusRoute: Identifiable, Hashable {
     let id: Int
     let companyName: String
     let source: String
