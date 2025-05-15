@@ -17,6 +17,7 @@
 		0085BFD22DD5B844005EEF5D /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0085BFD12DD5B844005EEF5D /* DetailViewModel.swift */; };
 		0085BFD52DD5B9D3005EEF5D /* BusDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0085BFD42DD5B9D3005EEF5D /* BusDetail.swift */; };
 		0085BFD92DD5BAD3005EEF5D /* InfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0085BFD82DD5BAD3005EEF5D /* InfoRow.swift */; };
+		0085BFDB2DD5C212005EEF5D /* DetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0085BFDA2DD5C212005EEF5D /* DetailViewModelTests.swift */; };
 		009787822DD4ECA2004DC847 /* RouteInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009787812DD4ECA2004DC847 /* RouteInfoCell.swift */; };
 		00B704472DD41502001769EE /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B704462DD41502001769EE /* SearchViewModel.swift */; };
 		00B7044A2DD41563001769EE /* RouteInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B704492DD41563001769EE /* RouteInfo.swift */; };
@@ -75,6 +76,7 @@
 		0085BFD12DD5B844005EEF5D /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		0085BFD42DD5B9D3005EEF5D /* BusDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusDetail.swift; sourceTree = "<group>"; };
 		0085BFD82DD5BAD3005EEF5D /* InfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRow.swift; sourceTree = "<group>"; };
+		0085BFDA2DD5C212005EEF5D /* DetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelTests.swift; sourceTree = "<group>"; };
 		009787812DD4ECA2004DC847 /* RouteInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteInfoCell.swift; sourceTree = "<group>"; };
 		00B704462DD41502001769EE /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		00B704492DD41563001769EE /* RouteInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteInfo.swift; sourceTree = "<group>"; };
@@ -298,6 +300,7 @@
 				00CD4F242DCF529100F7A801 /* LankaBusRideSwiftUITests.swift */,
 				006070732DD18DB3009AB627 /* HomeViewModelTests.swift */,
 				0085BFCA2DD5AC43005EEF5D /* SearchViewModelTests.swift */,
+				0085BFDA2DD5C212005EEF5D /* DetailViewModelTests.swift */,
 			);
 			path = LankaBusRideSwiftUITests;
 			sourceTree = "<group>";
@@ -567,6 +570,7 @@
 				006070722DD18CE4009AB627 /* MockBusRepository.swift in Sources */,
 				006070742DD18DB3009AB627 /* HomeViewModelTests.swift in Sources */,
 				0085BFCB2DD5AC43005EEF5D /* SearchViewModelTests.swift in Sources */,
+				0085BFDB2DD5C212005EEF5D /* DetailViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
