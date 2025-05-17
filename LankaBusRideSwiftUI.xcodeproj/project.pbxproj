@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		002415952DD8EBE600749CE7 /* RouteStopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002415942DD8EBE600749CE7 /* RouteStopView.swift */; };
 		0060706D2DD17EC9009AB627 /* AvailableBusRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0060706C2DD17EC9009AB627 /* AvailableBusRow.swift */; };
 		006070702DD18C3B009AB627 /* MockUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0060706F2DD18C3B009AB627 /* MockUserRepository.swift */; };
 		006070722DD18CE4009AB627 /* MockBusRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006070712DD18CE4009AB627 /* MockBusRepository.swift */; };
@@ -66,6 +67,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		002415942DD8EBE600749CE7 /* RouteStopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteStopView.swift; sourceTree = "<group>"; };
 		0060706C2DD17EC9009AB627 /* AvailableBusRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableBusRow.swift; sourceTree = "<group>"; };
 		0060706F2DD18C3B009AB627 /* MockUserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserRepository.swift; sourceTree = "<group>"; };
 		006070712DD18CE4009AB627 /* MockBusRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBusRepository.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				0085BFD82DD5BAD3005EEF5D /* InfoRow.swift */,
+				002415942DD8EBE600749CE7 /* RouteStopView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -557,6 +560,7 @@
 				00CD4F552DCF55E900F7A801 /* UserRepositoryProtocol.swift in Sources */,
 				0060706D2DD17EC9009AB627 /* AvailableBusRow.swift in Sources */,
 				00CD4F512DCF556900F7A801 /* User.swift in Sources */,
+				002415952DD8EBE600749CE7 /* RouteStopView.swift in Sources */,
 				0060707E2DD19942009AB627 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
