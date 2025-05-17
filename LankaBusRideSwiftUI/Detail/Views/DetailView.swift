@@ -12,66 +12,66 @@ struct DetailView: View {
     let busID: Int
     
     var body: some View {
-        VStack(spacing: 20) {
-            Image(systemName: "bus.fill")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 80, height: 80)
-                .padding()
-                .background(Circle().fill(Color.yellow))
-                .foregroundColor(.blue)
-            
-            HStack {
-                VStack {
-                    Text("Kandy")
+        ScrollView {
+            VStack(spacing: 24) {
+                
+                // Title Section
+                VStack(spacing: 4) {
+                    Text(viewModel.title)
                         .font(.title3)
-                        .bold()
-                    Text(viewModel.busDetail?.departure ?? "")
-                        .foregroundColor(.gray)
+                        .fontWeight(.medium)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(.secondary)
                 }
                 
-                Spacer()
+                // Bus Icon
+                Image(systemName: "bus.fill")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 80, height: 80)
+                    .padding()
+                    .background(Circle().fill(Color.yellow.opacity(0.3)))
+                    .foregroundColor(.blue)
                 
-                Image(systemName: "arrow.right")
-                    .font(.title2)
-                
-                Spacer()
-                
-                VStack {
-                    Text("Colombo")
-                        .font(.title3)
-                        .bold()
-                    Text(viewModel.busDetail?.arrival ?? "")
+                // Route Section
+                HStack(alignment: .center, spacing: 16) {
+                    RouteStopView(city: "Kandy", time: viewModel.busDetail?.departure ?? "")
+                    
+                    Image(systemName: "arrow.right")
+                        .font(.title)
                         .foregroundColor(.gray)
+                    
+                    RouteStopView(city: "Colombo", time: viewModel.busDetail?.arrival ?? "")
                 }
+                .padding(.horizontal)
+                
+                // Route Number
+                Text(viewModel.busDetail?.routeNumber ?? "N/A")
+                    .font(.headline)
+                    .fontWeight(.bold)
+                    .padding(.horizontal, 16)
+                    .padding(.vertical, 10)
+                    .background(Color.green.opacity(0.2))
+                    .foregroundColor(.red)
+                    .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+                
+                // Info Grid
+                VStack(spacing: 16) {
+                    InfoRow(icon: "bus.doubledecker", label: "Bus Type", value: viewModel.busType)
+                    InfoRow(icon: "clock.arrow.circlepath", label: "Duration", value: viewModel.duration)
+                    InfoRow(icon: "creditcard", label: "Fare", value: viewModel.fareText)
+                    InfoRow(icon: "mappin.and.ellipse", label: "Popular Stops", value: viewModel.popularStops)
+                }
+                .padding(.horizontal)
+                .padding(.top, 8)
             }
-            .padding(.horizontal)
-            
-            Text(viewModel.busDetail?.routeNumber ?? "")
-                .font(.title2)
-                .bold()
-                .foregroundColor(.red)
-                .padding()
-                .background(Color.green.opacity(0.2))
-                .cornerRadius(8)
-            
-            
-            infoArray
-            Spacer()
-        }.onAppear {
-            viewModel.loadBusDetail(id: busID) {
-            }
-        }.navigationTitle(viewModel.title )
-    }
-    
-    private var infoArray: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            InfoRow(label: "Bus Type:", value: viewModel.busType)
-            InfoRow(label: "Duration:", value: viewModel.duration)
-            InfoRow(label: "Fare:", value: viewModel.fareText)
-            InfoRow(label: "Popular stops:", value: viewModel.popularStops)
+            .padding()
         }
-        .padding()
+        .onAppear {
+            viewModel.loadBusDetail(id: busID) {}
+        }
+        .navigationTitle("Bus Detail")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

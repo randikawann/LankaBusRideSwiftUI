@@ -8,16 +8,26 @@
 import SwiftUI
 
 struct InfoRow: View {
-    var label: String
-    var value: String
+    let icon: String
+    let label: String
+    let value: String
 
     var body: some View {
-        HStack(alignment: .top) {
-            Text(label)
-                .fontWeight(.semibold)
+        HStack(alignment: .top, spacing: 12) {
+            Image(systemName: icon)
+                .frame(width: 24)
+                .foregroundColor(.blue)
+
+            VStack(alignment: .leading) {
+                Text(label)
+                    .font(.subheadline)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.gray)
+
+                Text(value)
+                    .font(.body)
+            }
             Spacer()
-            Text(value)
-                .multilineTextAlignment(.trailing)
         }
     }
 }
