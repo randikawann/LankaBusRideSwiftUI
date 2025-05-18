@@ -12,66 +12,93 @@ struct SearchView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                RoundedRectangle(cornerRadius: 12)
+            VStack(spacing: 16) {
+                // Top Card with Pin Icon
+                RoundedRectangle(cornerRadius: 20)
                     .fill(Color("LightGreen"))
-                    .frame(height: 100)
+                    .frame(height: 140)
+                    .shadow(color: Color.white.opacity(0.7), radius: 8, x: -6, y: -6)
+                    .shadow(color: Color.black.opacity(0.2), radius: 8, x: 6, y: 6)
                     .overlay(
-                        VStack{
-                            Text("Your location")
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                                .padding(.horizontal, 16)
-                                .foregroundColor(Color("PrimaryGreen"))
-                            TextField("Enter route number", text: $viewModel.routeNumber)
-                                .textFieldStyle(RoundedBorderTextFieldStyle())
-                                .padding(.horizontal, 16)
-                                .disabled(true)
+                        VStack(spacing: 12) {
+                            HStack {
+                                Spacer().frame(width: 16)
+                                Image(systemName: "mappin.and.ellipse")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 40, height: 40)
+                                    .foregroundColor(.red)
+                                
+                                
+                                Text("Your location")
+                                    .font(.headline)
+                                    .foregroundColor(Color("PrimaryGreen"))
+                                    .frame(maxWidth: .infinity, alignment: .leading)
+                            }
+                            VStack(alignment: .leading, spacing: 6) {
+                                HStack {
+                                    Image(systemName: "magnifyingglass")
+                                        .foregroundColor(.gray)
+                                    TextField("Route number", text: $viewModel.routeNumber)
+                                        .disabled(true)
+                                }
+                                .padding(12)
+                                .background(Color(UIColor.systemGray5))
+                                .cornerRadius(12)
+                            }
+                            .padding(.horizontal, 16)
                         }
                     )
-                    .padding(.horizontal, 16)
-                    .shadow(color: .gray.opacity(0.4), radius: 6, x: 0, y: 4)
+                    .padding(.horizontal)
+                
+                // Recent Routes
                 Text("Recent Routes")
-                    .font(.headline)
-                    .padding(.top)
-                VStack {
-                    recentRoutesList
-                        .listStyle(PlainListStyle())
-                }.frame(height: 150.0)
+                    .font(.title3)
+                    .bold()
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.horizontal)
+                
+                
+                ScrollView {
+                    ForEach(viewModel.allRouteInfos) { route in
+                        Button(action: {
+                            viewModel.selectedRoute = route
+                        }) {
+                            Text(route.routeNumber)
+                                .font(.body)
+                                .foregroundColor(.primary)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .padding()
+                                .background(Color(UIColor.systemGray5))
+                                .cornerRadius(12)
+                                .padding(.horizontal, 16)
+                        }
+                    }
+                }
+                .frame(height: 170)
+                .clipped()
                 
                 ScrollView {
                     if viewModel.routeNumber.isEmpty {
-                        VStack(alignment: .leading) {
-                            Text("No searched values. Please select a Recent route")
-                                .foregroundColor(.gray)
-                                .padding()
-                        }
+                        Text("No searched values. Please select a Recent route")
+                            .foregroundColor(.gray)
+                            .padding(.top, 16)
                     } else {
-                        VStack(spacing: 12) {
-                            ForEach(viewModel.filteredBusRoutes, id: \.self) { route in
-                                NavigationLink(destination: DetailView(busID: route.id)) {
-                                    AvailableBusRow(bus: route)
-                                        .padding(.horizontal, 16)
-                                }
+                        ForEach(viewModel.filteredBusRoutes, id: \.self) { route in
+                            NavigationLink(destination: DetailView(busID: route.id)) {
+                                AvailableBusRow(bus: route)
+                                    .padding(.horizontal, 16)
                             }
                         }
-                        .padding(.vertical, 8)
                     }
                 }
                 
-                Divider().padding(.vertical)
+                Spacer(minLength: 10)
             }
+            .padding(.top)
+            .navigationBarHidden(true)
             .onAppear {
                 viewModel.loadTopRoutes()
-            }
-        }
-    }
-    
-    private var recentRoutesList: some View {
-        List(viewModel.allRouteInfos, id: \.id) { route in
-            Button {
-                viewModel.selectedRoute = route
-            } label: {
-                RouteInfoCell(route: route)
             }
         }
     }
